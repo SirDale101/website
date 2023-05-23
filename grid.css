@@ -1,9 +1,0 @@
-.grid{
-  display: grid;
-}
-
-body {
-  background-image: ("background.jpg");
-  background-size:150%;
-  background-position: center center;
-}
