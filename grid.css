@@ -1,0 +1,89 @@
+@font-face { 
+  font-family: yoster; 
+  src: url('fonts/yoster.ttf');
+}
+
+/*Creates Container and Set's Grid Properties*/
+.container {  
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 50% 50% 50% 50%;
+  gap: 5% 1%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header"
+    "Biography Navigation"
+    "Blog Navigation"
+    "Projects Navigation"
+    "Footer Footer";
+}
+
+/*Controls Container Area Specific Properties*/
+.Header{
+    grid-area: Header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Biography { 
+  grid-area: Biography;
+}
+
+.Blog { 
+  grid-area: Blog; 
+}
+
+.Projects { 
+  grid-area: Projects;
+}
+
+.Navigation { 
+  grid-area: Navigation;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Footer { 
+  grid-area: Footer;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+/*Controls Global Container Properties*/
+.Header, .Biography, .Blog, .Projects, .Navigation, .Footer {
+  border: solid;
+  color: #FFFFFF;
+  background: #000000;
+  overflow-wrap: break-word;
+}
+
+/*Alligns Sections from Right to Left*/
+/*.Biography, .Blog, .Projects {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}*/
+
+/*Set's Title Specific Properties*/
+.Titles {
+  color: #08607E;
+  font-size: 150%;
+  text-shadow: 2px 2px 4px #08607E;
+}
+
+/*Controls Global Webpage Settings*/
+body {
+  background-image: url("background3\(4k\).jpg");
+  background-size: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1em 0;
+  font-family: yoster;
+}
+
+/*Set's Default P Configuration*/
+p {
+  margin: 1%;
+}
