@@ -1,0 +1,87 @@
+@font-face { 
+    font-family: yoster; 
+    src: url('fonts/VCR_OSD_MONO_1.001.ttf');
+}
+
+.container {
+    /*Creates Container and Set's Grid Properties*/ 
+    display: grid;
+    gap: 3% 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header"
+      "Main"
+      "Footer";
+}
+
+html {
+    cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Normal\ Select.cur"), default;
+}
+
+body {
+    background-image: url("backgrounds/space.gif");
+    background-color: #000000;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-family: yoster;
+}
+
+.Header, .Main, .Footer {
+    border: solid;
+    color: #FFFFFF;
+    background: #000000;
+    overflow-wrap: break-word;
+}
+
+.Header {
+    grid-area: Header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main {
+    grid-area: Main;
+    padding: 2.5%;
+}
+
+.Footer{
+    grid-area: Footer;
+    padding: 2.5%;
+    text-align: center;
+}
+
+.Title {
+    color: #28B6B1;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #28B6B1;
+}
+
+.Date {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.Posts {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.Text {
+
+}
+
+p {
+    margin: 1%;
+}
+
+.Header a {
+    cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+  
+.Footer a {
+    cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}

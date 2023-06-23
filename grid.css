@@ -1,14 +1,14 @@
 @font-face { 
   font-family: yoster; 
-  src: url('fonts/yoster.ttf');
+  src: url('fonts/VCR_OSD_MONO_1.001.ttf');
 }
 
 /*Creates Container and Set's Grid Properties*/
 .container {  
   display: grid;
   grid-template-columns: 75% 25%;
-  grid-template-rows: 50% 50% 50% 50%;
-  gap: 5% 1%;
+  /*grid-template-rows: 50% 50% 50% 50%;*/
+  gap: 1% 1%;
   grid-auto-flow: row;
   grid-template-areas:
     "Header Header"
@@ -19,18 +19,20 @@
 }
 
 /*Controls Container Area Specific Properties*/
-.Header{
+.Header {
     grid-area: Header;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .Biography { 
   grid-area: Biography;
+  /*list-style-image: url('icons/anonymous.png');*/
 }
 
 .Blog { 
-  grid-area: Blog; 
+  grid-area: Blog;
 }
 
 .Projects { 
@@ -39,16 +41,12 @@
 
 .Navigation { 
   grid-area: Navigation;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  /*list-style-image: url('icons/anonymous.png');*/
 }
 
 .Footer { 
   grid-area: Footer;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+  text-align: center;
 }
 
 /*Controls Global Container Properties*/
@@ -57,33 +55,90 @@
   color: #FFFFFF;
   background: #000000;
   overflow-wrap: break-word;
+  padding: 1%; 
 }
-
-/*Alligns Sections from Right to Left*/
-/*.Biography, .Blog, .Projects {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}*/
 
 /*Set's Title Specific Properties*/
 .Titles {
-  color: #08607E;
-  font-size: 150%;
-  text-shadow: 2px 2px 4px #08607E;
+  color: #28B6B1;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #28B6B1;
+}
+
+/*Set's Default Cursor for Website Page*/
+html{
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Normal\ Select.cur"), default;
 }
 
 /*Controls Global Webpage Settings*/
 body {
-  background-image: url("background3\(4k\).jpg");
+  /*background-image: url("background3\(4k\).jpg");*/
+  background-image: url("backgrounds/ebic.webp");
+  background-color: #000000;
   background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   max-width: 50%;
   margin: 0 auto;
   padding: 1em 0;
   font-family: yoster;
+  user-select: none;
 }
 
-/*Set's Default P Configuration*/
+/*See global grid decleration for padding*/
 p {
-  margin: 1%;
+  margin: 0%;
+}
+
+/*Defines Project and Blog's */
+.Posts {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+/*Set's Quick Link Style*/
+.Links {
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+  padding: 0%;
+  margin-top: 60%;
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+
+.Links a {
+  display: block;
+  text-decoration: none;
+  list-style-type: none;
+  color: #28B6B1;
+  font-size: 28px;
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+
+.Links a:hover {
+  background-color: #FFFFFF;
+  color: #28B6B1;
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+
+.Facts {
+  list-style-type: none;
+  padding: 0.3%;
+}
+
+.Header a {
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+
+.Footer a {
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+
+.Projects a {
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
+}
+
+.Blog a {
+  cursor: url("cursor/vaporwave-hotline-black-plus/Hotline\ Black\ Link\ Select\ Middlefinger.cur"), default;
 }

@@ -1,0 +1,51 @@
+﻿[Arrow]
+Path=Hotline Black Normal Select.cur
+
+[Help]
+Path=Hotline Black Help Select.cur
+
+[AppStarting]
+Path=Hotline Black Working In Background.cur
+
+[NWPen]
+Path=Hotline Black Handwriting.cur
+
+[Pin]
+Path=Hotline Black Location Select.cur
+
+[Person]
+Path=Hotline Black Person Select.cur
+
+[UpArrow]
+Path=Hotline Black Alternate Select.cur
+
+[SizeAll]
+Path=Hotline Black Move.cur
+
+[SizeNESW]
+Path=Hotline Black Diagonal Resize 2.cur
+
+[SizeNWSE]
+Path=Hotline Black Diagonal Resize 1.cur
+
+[SizeWE]
+Path=Hotline Black Horizontal Resize.cur
+
+[SizeNS]
+Path=Hotline Black Vertical Resize.cur
+
+[IBeam]
+Path=Hotline Black Text Select.cur
+
+[Crosshair]
+Path=Hotline Black Precision Select.cur
+
+[Wait]
+Path=Hotline Black Busy Modern.ani
+
+[Hand]
+Path=Hotline Black Link Select.cur
+
+[No]
+Path=Hotline Black Unavailable.cur
+
